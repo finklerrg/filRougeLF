@@ -1,0 +1,54 @@
+package siteParis;
+
+
+public class Gestionnaire {
+
+	/**
+	 * @uml.property  name="passwordGestionnaire"
+	 */
+	private String passwordGestionnaire;
+
+	/**
+	 * Getter of the property <tt>passwordGestionnaire</tt>
+	 * @return  Returns the passwordGestionnaire.
+	 * @uml.property  name="passwordGestionnaire"
+	 */
+	public String getPasswordGestionnaire() {
+		return passwordGestionnaire;
+	}
+
+	/**
+	 * Setter of the property <tt>passwordGestionnaire</tt>
+	 * @param passwordGestionnaire  The passwordGestionnaire to set.
+	 * @uml.property  name="passwordGestionnaire"
+	 */
+	public void setPasswordGestionnaire(String passwordGestionnaire) {
+		this.passwordGestionnaire = passwordGestionnaire;
+	}
+
+	/**
+	 * @uml.property  name="siteDeParisMetier"
+	 * @uml.associationEnd  multiplicity="(1 1)" inverse="gestionnaire:siteParis.SiteDeParisMetier"
+	 * @uml.association  name="gere"
+	 */
+	private SiteDeParisMetier siteDeParisMetier = new siteParis.SiteDeParisMetier();
+
+	/**
+	 * Getter of the property <tt>siteDeParisMetier</tt>
+	 * @return  Returns the siteDeParisMetier.
+	 * @uml.property  name="siteDeParisMetier"
+	 */
+	public SiteDeParisMetier getSiteDeParisMetier() {
+		return siteDeParisMetier;
+	}
+
+	/**
+	 * Setter of the property <tt>siteDeParisMetier</tt>
+	 * @param siteDeParisMetier  The siteDeParisMetier to set.
+	 * @uml.property  name="siteDeParisMetier"
+	 */
+	public void setSiteDeParisMetier(SiteDeParisMetier siteDeParisMetier) {
+		this.siteDeParisMetier = siteDeParisMetier;
+	}
+
+}

@@ -1,0 +1,150 @@
+package siteParis;
+
+import java.util.LinkedList;
+
+
+public class Competition {
+
+	/**
+	 * @uml.property  name="nomCompetition"
+	 */
+	private String nomCompetition;
+
+	/**
+	 * Getter of the property <tt>nomCompetition</tt>
+	 * @return  Returns the nomCompetition.
+	 * @uml.property  name="nomCompetition"
+	 */
+	public String getNomCompetition() {
+		return nomCompetition;
+	}
+
+	/**
+	 * Setter of the property <tt>nomCompetition</tt>
+	 * @param nomCompetition  The nomCompetition to set.
+	 * @uml.property  name="nomCompetition"
+	 */
+	public void setNomCompetition(String nomCompetition) {
+		this.nomCompetition = nomCompetition;
+	}
+
+	/**
+	 * @uml.property  name="dateCloture"
+	 */
+	private DateFrancaise dateCloture;
+
+	/**
+	 * Getter of the property <tt>dateCloture</tt>
+	 * @return  Returns the dateCloture.
+	 * @uml.property  name="dateCloture"
+	 */
+	public DateFrancaise getDateCloture() {
+		return dateCloture;
+	}
+
+	/**
+	 * Setter of the property <tt>dateCloture</tt>
+	 * @param dateCloture  The dateCloture to set.
+	 * @uml.property  name="dateCloture"
+	 */
+	public void setDateCloture(DateFrancaise dateCloture) {
+		this.dateCloture = dateCloture;
+	}
+
+	/**
+	 * @uml.property  name="competiteurs"
+	 */
+	private LinkedList competiteurs;
+
+	/**
+	 * Getter of the property <tt>competiteurs</tt>
+	 * @return  Returns the competiteurs.
+	 * @uml.property  name="competiteurs"
+	 */
+	public LinkedList getCompetiteurs() {
+		return competiteurs;
+	}
+
+	/**
+	 * Setter of the property <tt>competiteurs</tt>
+	 * @param competiteurs  The competiteurs to set.
+	 * @uml.property  name="competiteurs"
+	 */
+	public void setCompetiteurs(LinkedList competiteurs) {
+		this.competiteurs = competiteurs;
+	}
+
+	/** 
+	 * @uml.property name="siteDeParisMetier"
+	 * @uml.associationEnd multiplicity="(1 1)" inverse="competition:siteParis.SiteDeParisMetier"
+	 * @uml.association name="a"
+	 */
+	private SiteDeParisMetier siteDeParisMetier = new siteParis.SiteDeParisMetier();
+
+	/** 
+	 * Getter of the property <tt>siteDeParisMetier</tt>
+	 * @return  Returns the siteDeParisMetier.
+	 * @uml.property  name="siteDeParisMetier"
+	 */
+	public SiteDeParisMetier getSiteDeParisMetier() {
+		return siteDeParisMetier;
+	}
+
+	/** 
+	 * Setter of the property <tt>siteDeParisMetier</tt>
+	 * @param siteDeParisMetier  The siteDeParisMetier to set.
+	 * @uml.property  name="siteDeParisMetier"
+	 */
+	public void setSiteDeParisMetier(SiteDeParisMetier siteDeParisMetier) {
+		this.siteDeParisMetier = siteDeParisMetier;
+	}
+
+	/**
+	 * @uml.property  name="pari"
+	 * @uml.associationEnd  multiplicity="(1 1)" inverse="competition:siteParis.Pari"
+	 * @uml.association  name="fait reference à"
+	 */
+	private Pari pari = new siteParis.Pari();
+
+	/**
+	 * Getter of the property <tt>pari</tt>
+	 * @return  Returns the pari.
+	 * @uml.property  name="pari"
+	 */
+	public Pari getPari() {
+		return pari;
+	}
+
+	/**
+	 * Setter of the property <tt>pari</tt>
+	 * @param pari  The pari to set.
+	 * @uml.property  name="pari"
+	 */
+	public void setPari(Pari pari) {
+		this.pari = pari;
+	}
+
+	/** 
+	 * @uml.property name="vainqueur"
+	 */
+	private Joeur vainqueur;
+
+	/** 
+	 * Getter of the property <tt>vainqueur</tt>
+	 * @return  Returns the vainqueur.
+	 * @uml.property  name="vainqueur"
+	 */
+	public Joeur getVainqueur() {
+		return vainqueur;
+	}
+
+	/** 
+	 * Setter of the property <tt>vainqueur</tt>
+	 * @param vainqueur  The vainqueur to set.
+	 * @uml.property  name="vainqueur"
+	 */
+	public void setVainqueur(Joeur vainqueur) {
+		this.vainqueur = vainqueur;
+	}
+
+}

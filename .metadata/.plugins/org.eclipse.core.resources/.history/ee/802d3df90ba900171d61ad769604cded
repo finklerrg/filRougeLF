@@ -1,0 +1,29 @@
+package siteParis;
+
+
+public class Pari {
+
+	/**
+	 * @uml.property  name="miseEnJetons"
+	 */
+	private long miseEnJetons;
+
+	/**
+	 * Getter of the property <tt>miseEnJetons</tt>
+	 * @return  Returns the miseEnJetons.
+	 * @uml.property  name="miseEnJetons"
+	 */
+	public long getMiseEnJetons() {
+		return miseEnJetons;
+	}
+
+	/**
+	 * Setter of the property <tt>miseEnJetons</tt>
+	 * @param miseEnJetons  The miseEnJetons to set.
+	 * @uml.property  name="miseEnJetons"
+	 */
+	public void setMiseEnJetons(long miseEnJetons) {
+		this.miseEnJetons = miseEnJetons;
+	}
+
+}

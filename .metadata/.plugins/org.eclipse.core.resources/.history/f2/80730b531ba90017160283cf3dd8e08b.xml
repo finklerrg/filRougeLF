@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="1042,653" id="siteParis" metadata="uml2-1.0" initialized="true" tag="1000" key="32303037303533312D313030302066696C526F7567652F75736572">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.0 //@children.1/@sourceConnections.1 //@children.4/@sourceConnections.1" name="SiteDeParisMetier" location="615,21" size="170,200" id="siteParis/SiteDeParisMetier" runTimeClassModel="inscrireJoueur(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),crediterJoueur(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;JLjava.lang.String;),consulterJoueurs(Ljava.lang.String;),SiteDeParisMetier(Ljava.lang.String;),consulterCompetiteurs(Ljava.lang.String;),ajouterCompetition(Ljava.lang.String;LsiteParis.DateFrancaise;[Ljava.lang.String;Ljava.lang.String;),miserVainqueur(Ljava.lang.String;Ljava.lang.String;JLjava.lang.String;Ljava.lang.String;),desinscrireJoueur(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),debiterJoueur(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;JLjava.lang.String;),solderVainqueur(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),consulterCompetitions()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="147,150">
+      <children xsi:type="editmodel:MethodEditModel" name="SiteDeParisMetier" id="siteParis/SiteDeParisMetier#SiteDeParisMetier(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="consulterCompetiteurs" location="8,68" id="siteParis/SiteDeParisMetier#consulterCompetiteurs(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="consulterCompetitions" id="siteParis/SiteDeParisMetier#consulterCompetitions()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="consulterJoueurs" id="siteParis/SiteDeParisMetier#consulterJoueurs(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="crediterJoueur" id="siteParis/SiteDeParisMetier#crediterJoueur(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;JLjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="debiterJoueur" id="siteParis/SiteDeParisMetier#debiterJoueur(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;JLjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="desinscrireJoueur" id="siteParis/SiteDeParisMetier#desinscrireJoueur(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="inscrireJoueur" id="siteParis/SiteDeParisMetier#inscrireJoueur(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="miserVainqueur" id="siteParis/SiteDeParisMetier#miserVainqueur(Ljava.lang.String;Ljava.lang.String;JLjava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="solderVainqueur" id="siteParis/SiteDeParisMetier#solderVainqueur(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" name="gere" autoLocated="true" id="siteParis/Gestionnaire@gestionnaire+siteParis/SiteDeParisMetier@siteDeParisMetier" source="//@children.0" target="//@children.3" targetEnd="//@children.0/@sourceConnections.0/@children.1" label="//@children.0/@sourceConnections.0/@children.2" sourceEnd="//@children.0/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="siteDeParisMetier" location="170,126" id="siteParis/Gestionnaire@gestionnaire+siteParis/SiteDeParisMetier@siteDeParisMetier|siteParis/SiteDeParisMetier#siteDeParisMetier" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="gestionnaire" location="0,27" id="siteParis/Gestionnaire@gestionnaire+siteParis/SiteDeParisMetier@siteDeParisMetier|siteParis/Gestionnaire#gestionnaire" multiplicityLabel="//@children.0/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.0/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - gestionnaire" location="949,127" size="79,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1021,154" size="7,13" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" name="gere" size="25,13" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.0" name="Joeur" location="345,285" size="150,140" id="siteParis/Joeur" runTimeClassModel="prenom,pseudo,fairePari(),sommeJetons,nom,passwordJouer">
+    <children xsi:type="editmodel:CompartmentEditModel" size="127,75">
+      <children xsi:type="editmodel:AttributeEditModel" name="nom" id="siteParis/Joeur#nom"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="passwordJouer" id="siteParis/Joeur#passwordJouer"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="prenom" location="-6,64" id="siteParis/Joeur#prenom"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pseudo" id="siteParis/Joeur#pseudo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="sommeJetons" id="siteParis/Joeur#sommeJetons"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="68,15">
+      <children xsi:type="editmodel:MethodEditModel" name="fairePari" id="siteParis/Joeur#fairePari()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" name="a comme vainqueur" id="siteParis/Joeur@joeur1+siteParis/Competition@competition1" source="//@children.1" target="//@children.2" targetEnd="//@children.1/@sourceConnections.0/@children.1" label="//@children.1/@sourceConnections.0/@children.2" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="joeur1" location="79,0" id="siteParis/Joeur@joeur1+siteParis/Competition@competition1|siteParis/Joeur#joeur1" attachSource="true" multiplicityLabel="//@children.1/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.1/@sourceConnections.0/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - joeur1" location="431,265" size="45,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="410,265" size="7,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="competition1" location="225,87" id="siteParis/Joeur@joeur1+siteParis/Competition@competition1|siteParis/Competition#competition1"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="a comme vainqueur" size="108,13" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" name="joue dans" id="siteParis/Joeur@joeur+siteParis/SiteDeParisMetier@siteDeParisMetier" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.1/@children.1" label="//@children.1/@sourceConnections.1/@children.2" sourceEnd="//@children.1/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="joeur" location="150,69" id="siteParis/Joeur@joeur+siteParis/SiteDeParisMetier@siteDeParisMetier|siteParis/Joeur#joeur" attachSource="true" multiplicityLabel="//@children.1/@sourceConnections.1/@children.0/@children.1" roleLabel="//@children.1/@sourceConnections.1/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - joeur" location="502,361" size="38,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="502,334" size="5,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="siteDeParisMetier" location="0,190" id="siteParis/Joeur@joeur+siteParis/SiteDeParisMetier@siteDeParisMetier|siteParis/SiteDeParisMetier#siteDeParisMetier"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="joue dans" size="54,13" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0" name="Competition" location="30,21" size="225,115" id="siteParis/Competition" runTimeClassModel="vainqueur,joeurs,competiteurs,dateCloture,competiteurVainqueur,competition">
+    <children xsi:type="editmodel:CompartmentEditModel" size="202,75">
+      <children xsi:type="editmodel:AttributeEditModel" name="competiteurs" id="siteParis/Competition#competiteurs"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dateCloture" id="siteParis/Competition#dateCloture"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="vainqueur" id="siteParis/Competition#vainqueur"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="joeurs" id="siteParis/Competition#joeurs"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="competiteurVainqueur" id="siteParis/Competition#competiteurVainqueur"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" name="a" autoLocated="true" id="siteParis/Competition@competition+siteParis/SiteDeParisMetier@siteDeParisMetier" source="//@children.2" target="//@children.0" targetEnd="//@children.2/@sourceConnections.0/@children.1" label="//@children.2/@sourceConnections.0/@children.2" sourceEnd="//@children.2/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="competition" location="225,57" id="siteParis/Competition@competition+siteParis/SiteDeParisMetier@siteDeParisMetier|siteParis/Competition#competition" attachSource="true" multiplicityLabel="//@children.2/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.2/@sourceConnections.0/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - competition" location="262,58" size="75,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="262,85" size="5,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="siteDeParisMetier" location="0,57" id="siteParis/Competition@competition+siteParis/SiteDeParisMetier@siteDeParisMetier|siteParis/SiteDeParisMetier#siteDeParisMetier"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="a" size="7,13" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" name="fait reference à" id="siteParis/Competition@competition+siteParis/Pari@pari" source="//@children.2" target="//@children.4" targetEnd="//@children.2/@sourceConnections.1/@children.1" label="//@children.2/@sourceConnections.1/@children.2" sourceEnd="//@children.2/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="competition" location="202,114" id="siteParis/Competition@competition+siteParis/Pari@pari|siteParis/Competition#competition" attachSource="true" multiplicityLabel="//@children.2/@sourceConnections.1/@children.0/@children.1" roleLabel="//@children.2/@sourceConnections.1/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - competition" location="150,143" size="75,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="239,143" size="20,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="pari" location="10,0" id="siteParis/Competition@competition+siteParis/Pari@pari|siteParis/Pari#pari"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="fait reference à" size="84,13" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" name="a" autoLocated="true" id="siteParis/Competiteur@competiteur1+siteParis/Competition@competition" source="//@children.2" target="//@children.5" targetEnd="//@children.2/@sourceConnections.2/@children.1" label="//@children.2/@sourceConnections.2/@children.2" sourceEnd="//@children.2/@sourceConnections.2/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="competition" location="58,115" id="siteParis/Competiteur@competiteur1+siteParis/Competition@competition|siteParis/Competition#competition" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="competiteur1" location="58,0" id="siteParis/Competiteur@competiteur1+siteParis/Competition@competition|siteParis/Competiteur#competiteur1" multiplicityLabel="//@children.2/@sourceConnections.2/@children.1/@children.1" roleLabel="//@children.2/@sourceConnections.2/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - competiteur1" location="95,520" size="83,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1..*" location="63,520" size="18,13" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" name="a" size="7,13" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.0" name="Gestionnaire" location="1035,120" size="192,55" id="siteParis/Gestionnaire" runTimeClassModel="passwordGestionnaire">
+    <children xsi:type="editmodel:CompartmentEditModel" size="169,15">
+      <children xsi:type="editmodel:AttributeEditModel" name="passwordGestionnaire" id="siteParis/Gestionnaire#passwordGestionnaire"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.1" name="Pari" location="255,540" size="224,85" id="siteParis/Pari" runTimeClassModel="miseEnJetons,competitionReference,joeurReference">
+    <children xsi:type="editmodel:CompartmentEditModel" size="201,45">
+      <children xsi:type="editmodel:AttributeEditModel" name="competitionReference" id="siteParis/Pari#competitionReference"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="miseEnJetons" id="siteParis/Pari#miseEnJetons"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="joeurReference" id="siteParis/Pari#joeurReference"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" name="a ete fait par" autoLocated="true" id="siteParis/Joeur@joeur+siteParis/Pari@pari" source="//@children.4" target="//@children.1" targetEnd="//@children.4/@sourceConnections.0/@children.1" label="//@children.4/@sourceConnections.0/@children.2" sourceEnd="//@children.4/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="pari" location="156,0" id="siteParis/Joeur@joeur+siteParis/Pari@pari|siteParis/Pari#pari" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="joeur" location="66,140" id="siteParis/Joeur@joeur+siteParis/Pari@pari|siteParis/Joeur#joeur" multiplicityLabel="//@children.4/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.4/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - joeur" location="418,432" size="38,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="397,432" size="7,13" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" name="a ete fait par" size="70,13" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" name="a" id="siteParis/Pari@pari+siteParis/SiteDeParisMetier@siteDeParisMetier" source="//@children.4" target="//@children.0" targetEnd="//@children.4/@sourceConnections.1/@children.1" label="//@children.4/@sourceConnections.1/@children.2" sourceEnd="//@children.4/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="pari" location="224,26" id="siteParis/Pari@pari+siteParis/SiteDeParisMetier@siteDeParisMetier|siteParis/Pari#pari" attachSource="true" multiplicityLabel="//@children.4/@sourceConnections.1/@children.0/@children.1" roleLabel="//@children.4/@sourceConnections.1/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - pari" location="486,573" size="31,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="486,546" size="5,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="siteDeParisMetier" location="141,200" id="siteParis/Pari@pari+siteParis/SiteDeParisMetier@siteDeParisMetier|siteParis/SiteDeParisMetier#siteDeParisMetier"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="a" size="7,13" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="siteParis/Competiteur@competiteur2+siteParis/Pari@pari1" source="//@children.4" target="//@children.5" targetEnd="//@children.4/@sourceConnections.2/@children.1" label="//@children.4/@sourceConnections.2/@children.2" sourceEnd="//@children.4/@sourceConnections.2/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="pari1" location="0,27" id="siteParis/Competiteur@competiteur2+siteParis/Pari@pari1|siteParis/Pari#pari1" attachSource="true" multiplicityLabel="//@children.4/@sourceConnections.2/@children.0/@children.1" roleLabel="//@children.4/@sourceConnections.2/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - pari1" location="210,547" size="38,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="228,574" size="20,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="competiteur2" location="117,27" id="siteParis/Competiteur@competiteur2+siteParis/Pari@pari1|siteParis/Competiteur#competiteur2" multiplicityLabel="//@children.4/@sourceConnections.2/@children.1/@children.1" roleLabel="//@children.4/@sourceConnections.2/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - competiteur2" location="154,547" size="83,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="154,574" size="20,13" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.2 //@children.2/@sourceConnections.2" name="Competiteur" location="30,540" size="117,55" id="siteParis/Competiteur" runTimeClassModel="nom">
+    <children xsi:type="editmodel:CompartmentEditModel" size="70,15">
+      <children xsi:type="editmodel:AttributeEditModel" name="nom" id="siteParis/Competiteur#nom"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

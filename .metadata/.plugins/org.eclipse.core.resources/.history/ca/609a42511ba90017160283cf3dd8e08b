@@ -1,0 +1,170 @@
+package siteParis;
+
+import java.util.Collection;
+
+
+public class Joeur {
+
+	/**
+	 * @uml.property  name="nom"
+	 */
+	private String nom;
+
+	/**
+	 * Getter of the property <tt>nom</tt>
+	 * @return  Returns the nom.
+	 * @uml.property  name="nom"
+	 */
+	public String getNom() {
+		return nom;
+	}
+
+	/**
+	 * Setter of the property <tt>nom</tt>
+	 * @param nom  The nom to set.
+	 * @uml.property  name="nom"
+	 */
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	/**
+	 * @uml.property  name="prenom"
+	 */
+	private String prenom;
+
+	/**
+	 * Getter of the property <tt>prenom</tt>
+	 * @return  Returns the prenom.
+	 * @uml.property  name="prenom"
+	 */
+	public String getPrenom() {
+		return prenom;
+	}
+
+	/**
+	 * Setter of the property <tt>prenom</tt>
+	 * @param prenom  The prenom to set.
+	 * @uml.property  name="prenom"
+	 */
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+
+	/**
+	 * @uml.property  name="pseudo"
+	 */
+	private String pseudo;
+
+	/**
+	 * Getter of the property <tt>pseudo</tt>
+	 * @return  Returns the pseudo.
+	 * @uml.property  name="pseudo"
+	 */
+	public String getPseudo() {
+		return pseudo;
+	}
+
+	/**
+	 * Setter of the property <tt>pseudo</tt>
+	 * @param pseudo  The pseudo to set.
+	 * @uml.property  name="pseudo"
+	 */
+	public void setPseudo(String pseudo) {
+		this.pseudo = pseudo;
+	}
+
+	/** 
+	 * @uml.property name="sommeJetons"
+	 */
+	private long sommeJetons;
+
+	/** 
+	 * Getter of the property <tt>sommeJetons</tt>
+	 * @return  Returns the sommeJetons.
+	 * @uml.property  name="sommeJetons"
+	 */
+	public long getSommeJetons() {
+		return sommeJetons;
+	}
+
+	/**
+	 * @uml.property  name="passwordJouer"
+	 */
+	private String passwordJouer;
+
+	/**
+	 * Getter of the property <tt>passwordJouer</tt>
+	 * @return  Returns the passwordJouer.
+	 * @uml.property  name="passwordJouer"
+	 */
+	public String getPasswordJouer() {
+		return passwordJouer;
+	}
+
+	/**
+	 * Setter of the property <tt>passwordJouer</tt>
+	 * @param passwordJouer  The passwordJouer to set.
+	 * @uml.property  name="passwordJouer"
+	 */
+	public void setPasswordJouer(String passwordJouer) {
+		this.passwordJouer = passwordJouer;
+	}
+
+	/**
+	 * @uml.property  name="competition"
+	 * @uml.associationEnd  multiplicity="(0 -1)" inverse="joeur:siteParis.Competition"
+	 * @uml.association  name="a"
+	 */
+	private Collection competition = new java.util.ArrayList();
+
+	/**
+	 * Getter of the property <tt>competition</tt>
+	 * @return  Returns the competition.
+	 * @uml.property  name="competition"
+	 */
+	public Collection getCompetition() {
+		return competition;
+	}
+
+	/**
+	 * Setter of the property <tt>competition</tt>
+	 * @param competition  The competition to set.
+	 * @uml.property  name="competition"
+	 */
+	public void setCompetition(Collection competition) {
+		this.competition = competition;
+	}
+
+		
+			
+			
+			public boolean fairePari(){
+			
+						return false;	
+					 }
+
+			/** 
+			 * Setter of the property <tt>sommeJetons</tt>
+			 * @param sommeJetons  The sommeJetons to set.
+			 * @uml.property  name="sommeJetons"
+			 */
+			public void setSommeJetons(long sommeJetons) {
+				this.sommeJetons = sommeJetons;
+			}
+
+				
+				/**
+				 */
+				public boolean crediter(){
+					return false;	
+				}
+
+					
+					/**
+					 */
+					public boolean debiter(){
+						return false;	
+					}
+
+}

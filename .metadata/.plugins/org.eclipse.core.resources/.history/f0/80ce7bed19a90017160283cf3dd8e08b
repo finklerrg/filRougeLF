@@ -1,0 +1,104 @@
+package siteParis;
+
+import java.util.Collection;
+
+
+public class Competiteur {
+
+	/**
+	 * @uml.property  name="nom"
+	 */
+	private String nom;
+
+	/**
+	 * Getter of the property <tt>nom</tt>
+	 * @return  Returns the nom.
+	 * @uml.property  name="nom"
+	 */
+	public String getNom() {
+		return nom;
+	}
+
+	/**
+	 * Setter of the property <tt>nom</tt>
+	 * @param nom  The nom to set.
+	 * @uml.property  name="nom"
+	 */
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	/**
+	 * @uml.property  name="pari"
+	 * @uml.associationEnd  inverse="competiteur1:siteParis.Pari"
+	 */
+	private Pari pari;
+
+	/**
+	 * Getter of the property <tt>pari</tt>
+	 * @return  Returns the pari.
+	 * @uml.property  name="pari"
+	 */
+	public Pari getPari() {
+		return pari;
+	}
+
+	/**
+	 * Setter of the property <tt>pari</tt>
+	 * @param pari  The pari to set.
+	 * @uml.property  name="pari"
+	 */
+	public void setPari(Pari pari) {
+		this.pari = pari;
+	}
+
+	/**
+	 * @uml.property  name="pari1"
+	 * @uml.associationEnd  inverse="competiteur2:siteParis.Pari"
+	 */
+	private Pari pari1;
+
+	/**
+	 * Getter of the property <tt>pari1</tt>
+	 * @return  Returns the pari1.
+	 * @uml.property  name="pari1"
+	 */
+	public Pari getPari1() {
+		return pari1;
+	}
+
+	/**
+	 * Setter of the property <tt>pari1</tt>
+	 * @param pari1  The pari1 to set.
+	 * @uml.property  name="pari1"
+	 */
+	public void setPari1(Pari pari1) {
+		this.pari1 = pari1;
+	}
+
+	/**
+	 * @uml.property  name="siteDeParisMetier"
+	 * @uml.associationEnd  multiplicity="(1 -1)" inverse="competiteur:siteParis.SiteDeParisMetier"
+	 * @uml.association  name="a"
+	 */
+	private Collection siteDeParisMetier;
+
+	/**
+	 * Getter of the property <tt>siteDeParisMetier</tt>
+	 * @return  Returns the siteDeParisMetier.
+	 * @uml.property  name="siteDeParisMetier"
+	 */
+	public Collection getSiteDeParisMetier() {
+		return siteDeParisMetier;
+	}
+
+	/**
+	 * Setter of the property <tt>siteDeParisMetier</tt>
+	 * @param siteDeParisMetier  The siteDeParisMetier to set.
+	 * @uml.property  name="siteDeParisMetier"
+	 */
+	public void setSiteDeParisMetier(Collection siteDeParisMetier) {
+		this.siteDeParisMetier = siteDeParisMetier;
+	}
+
+}

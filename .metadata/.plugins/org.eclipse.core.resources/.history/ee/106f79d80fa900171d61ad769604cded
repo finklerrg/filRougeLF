@@ -1,0 +1,173 @@
+package siteParis;
+
+
+public class Pari {
+
+	/**
+	 * @uml.property  name="miseEnJetons"
+	 */
+	private long miseEnJetons;
+
+	/**
+	 * Getter of the property <tt>miseEnJetons</tt>
+	 * @return  Returns the miseEnJetons.
+	 * @uml.property  name="miseEnJetons"
+	 */
+	public long getMiseEnJetons() {
+		return miseEnJetons;
+	}
+
+	/**
+	 * Setter of the property <tt>miseEnJetons</tt>
+	 * @param miseEnJetons  The miseEnJetons to set.
+	 * @uml.property  name="miseEnJetons"
+	 */
+	public void setMiseEnJetons(long miseEnJetons) {
+		this.miseEnJetons = miseEnJetons;
+	}
+
+	/**
+	 * @uml.property  name="joeurReference"
+	 */
+	private Joeur joeurReference;
+
+	/**
+	 * Getter of the property <tt>joeurReference</tt>
+	 * @return  Returns the joeurReference.
+	 * @uml.property  name="joeurReference"
+	 */
+	public Joeur getJoeurReference() {
+		return joeurReference;
+	}
+
+	/**
+	 * Setter of the property <tt>joeurReference</tt>
+	 * @param joeurReference  The joeurReference to set.
+	 * @uml.property  name="joeurReference"
+	 */
+	public void setJoeurReference(Joeur joeurReference) {
+		this.joeurReference = joeurReference;
+	}
+
+	/**
+	 * @uml.property  name="vainqueurEnVisage"
+	 */
+	private String vainqueurEnVisage;
+
+	/**
+	 * Getter of the property <tt>vainqueurEnVisage</tt>
+	 * @return  Returns the vainqueurEnVisage.
+	 * @uml.property  name="vainqueurEnVisage"
+	 */
+	public String getVainqueurEnVisage() {
+		return vainqueurEnVisage;
+	}
+
+	/**
+	 * Setter of the property <tt>vainqueurEnVisage</tt>
+	 * @param vainqueurEnVisage  The vainqueurEnVisage to set.
+	 * @uml.property  name="vainqueurEnVisage"
+	 */
+	public void setVainqueurEnVisage(String vainqueurEnVisage) {
+		this.vainqueurEnVisage = vainqueurEnVisage;
+	}
+
+	/**
+	 * @uml.property  name="competitionReference"
+	 */
+	private Competition competitionReference;
+
+	/**
+	 * Getter of the property <tt>competitionReference</tt>
+	 * @return  Returns the competitionReference.
+	 * @uml.property  name="competitionReference"
+	 */
+	public Competition getCompetitionReference() {
+		return competitionReference;
+	}
+
+	/**
+	 * Setter of the property <tt>competitionReference</tt>
+	 * @param competitionReference  The competitionReference to set.
+	 * @uml.property  name="competitionReference"
+	 */
+	public void setCompetitionReference(Competition competitionReference) {
+		this.competitionReference = competitionReference;
+	}
+
+	/**
+	 * @uml.property  name="siteDeParisMetier"
+	 * @uml.associationEnd  multiplicity="(1 1)" inverse="pari:siteParis.SiteDeParisMetier"
+	 * @uml.association  name="a"
+	 */
+	private SiteDeParisMetier siteDeParisMetier = new siteParis.SiteDeParisMetier();
+
+	/**
+	 * Getter of the property <tt>siteDeParisMetier</tt>
+	 * @return  Returns the siteDeParisMetier.
+	 * @uml.property  name="siteDeParisMetier"
+	 */
+	public SiteDeParisMetier getSiteDeParisMetier() {
+		return siteDeParisMetier;
+	}
+
+	/**
+	 * Setter of the property <tt>siteDeParisMetier</tt>
+	 * @param siteDeParisMetier  The siteDeParisMetier to set.
+	 * @uml.property  name="siteDeParisMetier"
+	 */
+	public void setSiteDeParisMetier(SiteDeParisMetier siteDeParisMetier) {
+		this.siteDeParisMetier = siteDeParisMetier;
+	}
+
+	/** 
+	 * @uml.property name="joeur"
+	 * @uml.associationEnd multiplicity="(1 1)" inverse="pari:siteParis.Joeur"
+	 * @uml.association name="a ete fait par"
+	 */
+	private Joeur joeur = new siteParis.Joeur();
+
+	/** 
+	 * Getter of the property <tt>joeur</tt>
+	 * @return  Returns the joeur.
+	 * @uml.property  name="joeur"
+	 */
+	public Joeur getJoeur() {
+		return joeur;
+	}
+
+	/** 
+	 * Setter of the property <tt>joeur</tt>
+	 * @param joeur  The joeur to set.
+	 * @uml.property  name="joeur"
+	 */
+	public void setJoeur(Joeur joeur) {
+		this.joeur = joeur;
+	}
+
+	/** 
+	 * @uml.property name="competition"
+	 * @uml.associationEnd multiplicity="(1 1)" inverse="pari:siteParis.Competition"
+	 * @uml.association name="fait reference à"
+	 */
+	private Competition competition = new siteParis.Competition();
+
+	/**
+	 * Getter of the property <tt>competition</tt>
+	 * @return  Returns the competition.
+	 * @uml.property  name="competition"
+	 */
+	public Competition getCompetition() {
+		return competition;
+	}
+
+	/**
+	 * Setter of the property <tt>competition</tt>
+	 * @param competition  The competition to set.
+	 * @uml.property  name="competition"
+	 */
+	public void setCompetition(Competition competition) {
+		this.competition = competition;
+	}
+
+}

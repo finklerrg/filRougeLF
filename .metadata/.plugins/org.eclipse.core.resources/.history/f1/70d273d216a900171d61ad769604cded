@@ -1,0 +1,177 @@
+package siteParis;
+
+import java.util.LinkedList;
+import java.util.Collection;
+import Competiteur;
+
+
+public class Competition {
+
+	/**
+	 * @uml.property  name="dateCloture"
+	 */
+	private DateFrancaise dateCloture;
+
+	/**
+	 * Getter of the property <tt>dateCloture</tt>
+	 * @return  Returns the dateCloture.
+	 * @uml.property  name="dateCloture"
+	 */
+	public DateFrancaise getDateCloture() {
+		return dateCloture;
+	}
+
+	/**
+	 * Setter of the property <tt>dateCloture</tt>
+	 * @param dateCloture  The dateCloture to set.
+	 * @uml.property  name="dateCloture"
+	 */
+	public void setDateCloture(DateFrancaise dateCloture) {
+		this.dateCloture = dateCloture;
+	}
+
+	/** 
+	 * @uml.property name="competiteurs"
+	 */
+	private LinkedList competiteurs;
+
+	/** 
+	 * Getter of the property <tt>competiteurs</tt>
+	 * @return  Returns the competiteurs.
+	 * @uml.property  name="competiteurs"
+	 */
+	public LinkedList getCompetiteurs() {
+		return competiteurs;
+	}
+
+	/** 
+	 * @uml.property name="vainqueur"
+	 */
+	private Joeur vainqueur;
+
+	/** 
+	 * Getter of the property <tt>vainqueur</tt>
+	 * @return  Returns the vainqueur.
+	 * @uml.property  name="vainqueur"
+	 */
+	public Joeur getVainqueur() {
+		return vainqueur;
+	}
+
+	/** 
+	 * Setter of the property <tt>vainqueur</tt>
+	 * @param vainqueur  The vainqueur to set.
+	 * @uml.property  name="vainqueur"
+	 */
+	public void setVainqueur(Joeur vainqueur) {
+		this.vainqueur = vainqueur;
+	}
+
+	/**
+	 * @uml.property  name="joeur"
+	 * @uml.associationEnd  multiplicity="(0 -1)" inverse="competition:siteParis.Joeur"
+	 * @uml.association  name="a"
+	 */
+	private Collection joeur;
+
+	/**
+	 * Getter of the property <tt>joeur</tt>
+	 * @return  Returns the joeur.
+	 * @uml.property  name="joeur"
+	 */
+	public Collection getJoeur() {
+		return joeur;
+	}
+
+	/**
+	 * Setter of the property <tt>joeur</tt>
+	 * @param joeur  The joeur to set.
+	 * @uml.property  name="joeur"
+	 */
+	public void setJoeur(Collection joeur) {
+		this.joeur = joeur;
+	}
+
+	/** 
+	 * @uml.property name="joeur1"
+	 * @uml.associationEnd multiplicity="(1 1)" inverse="competition1:siteParis.Joeur"
+	 * @uml.association name="a comme vainqueur"
+	 */
+	private Joeur joeur1 = new siteParis.Joeur();
+
+	/** 
+	 * Getter of the property <tt>joeur1</tt>
+	 * @return  Returns the joeur1.
+	 * @uml.property  name="joeur1"
+	 */
+	public Joeur getJoeur1() {
+		return joeur1;
+	}
+
+	/** 
+	 * Setter of the property <tt>joeur1</tt>
+	 * @param joeur1  The joeur1 to set.
+	 * @uml.property  name="joeur1"
+	 */
+	public void setJoeur1(Joeur joeur1) {
+		this.joeur1 = joeur1;
+	}
+
+	/** 
+	 * Setter of the property <tt>competiteurs</tt>
+	 * @param competiteurs  The competiteurs to set.
+	 * @uml.property  name="competiteurs"
+	 */
+	public void setCompetiteurs(LinkedList competiteurs) {
+		this.competiteurs = competiteurs;
+	}
+
+	/**
+	 * @uml.property  name="competiteur"
+	 * @uml.associationEnd  multiplicity="(1 -1)" inverse="competition:siteParis.Competiteur"
+	 * @uml.association  name="a"
+	 */
+	private Collection competiteur;
+
+	/**
+	 * Getter of the property <tt>competiteur</tt>
+	 * @return  Returns the competiteur.
+	 * @uml.property  name="competiteur"
+	 */
+	public Collection getCompetiteur() {
+		return competiteur;
+	}
+
+	/**
+	 * Setter of the property <tt>competiteur</tt>
+	 * @param competiteur  The competiteur to set.
+	 * @uml.property  name="competiteur"
+	 */
+	public void setCompetiteur(Collection competiteur) {
+		this.competiteur = competiteur;
+	}
+
+	/**
+	 * @uml.property  name="competition"
+	 */
+	private String competition;
+
+	/** 
+	 * Getter of the property <tt>nomCompetition</tt>
+	 * @return  Returns the nomCompetition.
+	 * @uml.property  name="competition"
+	 */
+	public String getCompetition() {
+		return competition;
+	}
+
+	/** 
+	 * Setter of the property <tt>nomCompetition</tt>
+	 * @param nomCompetition  The nomCompetition to set.
+	 * @uml.property  name="competition"
+	 */
+	public void setCompetition(String competition) {
+		this.competition = competition;
+	}
+
+}

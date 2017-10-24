@@ -1,0 +1,88 @@
+package entities;
+
+import java.io.Serializable;
+import javax.persistence.*;
+
+/**
+ * Entity implementation class for Entity: Person
+ * 
+ */
+@Entity
+@Inheritance(strategy = InheritanceType.JOINED)
+@Table(name = "people")
+public class Person implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "id")
+	private Long persNumber;
+	@Column(name = "p_name")
+	private String name;
+	@Column(name = "p_address")
+	private String address;
+
+	/*
+	 * No argument constructor. Needed for persistence
+	 */
+	public Person() {
+	}
+	
+	/*
+	 * Constructor for the class
+	 */
+	public Person(String name, String address) {
+		this.name = name;
+		this.address = address;
+	}
+
+	// Getter methods
+	public Long getPersNumber() {
+		return persNumber;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	// ------------------------------------------------------
+
+	// Setter methods
+	private void setPersNumber(Long number) {
+		this.persNumber = number;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	// -----------------------------------------------------------------------------
+
+	@Override
+	public int hashCode(){
+		return name.hashCode();
+	}
+
+	@Override
+	public boolean equals(Object o){
+		if (!(o instanceof Person))
+			return false;
+		
+		Person p = (Person)o;
+		return p.name.equals(this.name);
+	}
+	
+	@Override
+	public String toString() {
+		return "Person [" + persNumber + ", " + getName() + " " + getAddress()
+				+ ")]";
+	}
+}
