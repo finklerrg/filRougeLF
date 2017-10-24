@@ -736,25 +736,50 @@ public class SiteDeParisMetier {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	public LinkedList <String> consulterCompetiteurs(String competition) throws CompetitionException, CompetitionInexistanteException{
-		return new LinkedList <String> ();
+
+		//o metodo recebe o nome da competição, entao fazer um for e percorrer a likedList toda e ver qual é o
+		// a competição correta e então devolver a linked list de strings com o nome dos competidores desta competição.
+
+		LinkedList<String> competConsult1;
+		competConsult1=new LinkedList<String>();
+
+		validiteCompetition(competition);
+		int verdade=0;
+		int var=0;
+		int tamanho=competitions.size();
+		for(int i=0;i<tamanho;i++){
+
+			//percorrer toda a liked list de competição chamar o nome da competição e comparar
+			// com a string recebida como metodo
+
+			if(competitions.get(i).getCompetition().equals(competition)){
+				verdade=1;
+				var=i;
+			}
+
+		}
+
+		if(verdade==0) throw new CompetitionInexistanteException();
+
+
+
+		//competConsult1=competitions.get(var).getCompetiteurs();
+
+		int tamanho2=competitions.get(var).getCompetiteurs().size();
+		for(int i1=0;i1<tamanho2;i1++){
+
+			competConsult1.add(competitions.get(var).getCompetiteurs().get(i1).getNom().toString());
+
+
+		}
+
+		// System.out.println("a lista de competidores é "+competConsult1);
+
+
+
+
+		return competConsult1;
 	}
 
 
@@ -769,6 +794,13 @@ public class SiteDeParisMetier {
 
 
 
+	protected void validiteCompetition(String competition )throws CompetitionException{
+
+		if (competition==null) throw new CompetitionException();
+		if (!competition.matches("[0-9A-Za-z]{4,}")) throw new CompetitionException();
+
+
+	}
 
 
 

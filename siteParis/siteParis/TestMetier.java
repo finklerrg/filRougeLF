@@ -1145,7 +1145,7 @@ public class TestMetier {
 		testConsulterCompetitions();
 
 
-//		testConsulterCompetiteurs();
+		testConsulterCompetiteurs();
 //		testConsulterJoueurs();
 
 
