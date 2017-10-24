@@ -1,3 +1,5 @@
+
+
 package siteParis;
 
 
@@ -673,6 +675,42 @@ public class SiteDeParisMetier {
 	public LinkedList <LinkedList <String>> consulterCompetitions(){
 
 
+		//a ideia é enviar uma linked list do tipo linked list, sendo
+		// a cada elemento da primeira liked list nada mais que
+		// uma competição e a segunda liked list tendo dois
+		//elementos, o primeiro é o nome da ocmpetição e o segundo
+		//é a data de fechamento.....
+		//System.out.println("entrou");
+		LinkedList<LinkedList<String>> competitions2;
+		//System.out.println("entrou2");
+		competitions2=new LinkedList<LinkedList<String>> ();
+		//System.out.println("entrou3");
+
+		LinkedList<String>[] info1;
+		info1 = new LinkedList[competitions.size()];
+
+		// System.out.println("o tamano novo e "+competitions2.size());
+
+		//acho que ate o momento a melhor ideia seria dar um for e percorrer
+		// toda a likedlist e ir endereçando cada posição
+
+		for (int i=0;i<competitions.size();i++){
+
+			info1[i]=new LinkedList<String>();
+			//   System.out.println("entrou no for");
+			info1[i].add(competitions.get(i).getCompetition());
+			// System.out.println("A linked list é "+info1[i]);
+			info1[i].add(competitions.get(i).getDateCloture().toString());
+			//System.out.println("A linked list é "+info1[i]);
+			competitions2.add(info1[i]);
+
+			//System.out.println("A linked list é "+competitions2);
+
+		}
+
+		//System.out.println("o tamanho e "+competitions.size());
+
+		//System.out.println("A liked list é "+competitions2);
 
 
 
@@ -680,8 +718,39 @@ public class SiteDeParisMetier {
 
 
 
-		return new LinkedList <LinkedList <String>>();
+
+
+
+
+
+
+
+		//return new LinkedList <LinkedList <String>>();
+		return competitions2;
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	public LinkedList <String> consulterCompetiteurs(String competition) throws CompetitionException, CompetitionInexistanteException{

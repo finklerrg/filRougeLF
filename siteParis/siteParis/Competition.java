@@ -2,6 +2,8 @@ package siteParis;
 
 import java.util.LinkedList;
 
+import java.util.Arrays;
+
 
 public class Competition {
 

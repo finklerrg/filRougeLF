@@ -1142,9 +1142,17 @@ public class TestMetier {
 		testAjouterCompetition();
 		testMiserVainqueur();
 		testSolderVainqueur();
-//               testConsulterCompetitions();
+		testConsulterCompetitions();
+
+
 //		testConsulterCompetiteurs();
 //		testConsulterJoueurs();
+
+
+
+
+
+
 
 	}
 
