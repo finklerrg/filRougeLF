@@ -7,11 +7,11 @@ public class Gestionnaire {
 	 * @uml.property  name="passwordGestionnaire"
 	 */
 	private String passwordGestionnaire;
-   
-   public Gestionnaire(String password)throws MetierException{
-      validitePasswordGestionnaire(password);        
-      this.setPasswordGestionnaire(password);
-   }
+
+	public Gestionnaire(String password)throws MetierException{
+		validitePasswordGestionnaire(password);
+		this.setPasswordGestionnaire(password);
+	}
 
 	/**
 	 * Getter of the property <tt>passwordGestionnaire</tt>
@@ -29,11 +29,11 @@ public class Gestionnaire {
 	 */
 	public void setPasswordGestionnaire(String passwordGestionnaire) {
 		this.passwordGestionnaire = passwordGestionnaire;
-      
+
 	}
-   protected void validitePasswordGestionnaire(String passwordGestionnaire) throws MetierException {
-	   if (passwordGestionnaire==null) throw new MetierException();
-	   if (!passwordGestionnaire.matches("[0-9A-Za-z]{8,}")) throw new MetierException();
+	protected void validitePasswordGestionnaire(String passwordGestionnaire) throws MetierException {
+		if (passwordGestionnaire==null) throw new MetierException();
+		if (!passwordGestionnaire.matches("[0-9A-Za-z]{8,}")) throw new MetierException();
 	}
 
 }

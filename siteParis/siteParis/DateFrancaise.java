@@ -9,7 +9,7 @@
  *
  */
 public class DateFrancaise  extends GregorianCalendar {
-   
+
    
    /**
  * @uml.property  name="dateSimulee"

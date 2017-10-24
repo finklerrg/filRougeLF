@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 
 /**
- * 
+ *
  * @author prou
  *
  */
@@ -29,7 +29,7 @@ public class TestMetier {
 			System.out.println("construire un site de paris avec un password gestionnaire invalide (non instancié) n'a pas levé l'exception MetierException");
 		}
 		catch (MetierException e) { }
-		catch (Exception e) { 
+		catch (Exception e) {
 			System.out.println("construire un site de paris avec un password gestionnaire invalide (non instancié) n'a pas levé l'exception MetierException mais " + e.getClass().getName());
 		}
 
@@ -38,7 +38,7 @@ public class TestMetier {
 			System.out.println("construire un site de paris avec un password gestionnaire invalide (moins de 8 caracteres) n'a pas levé l'exception MetierException ");
 		}
 		catch (MetierException e) { }
-		catch (Exception e) { 
+		catch (Exception e) {
 			System.out.println("construire un site de paris avec un password gestionnaire invalide (moins de 8 caracteres) n'a pas levé l'exception MetierException mais " + e.getClass().getName());
 		}
 
@@ -47,7 +47,7 @@ public class TestMetier {
 			System.out.println("construire un site de paris avec un password gestionnaire invalide (un espace) n'a pas levé l'exception MetierException ");
 		}
 		catch (MetierException e) { }
-		catch (Exception e) { 
+		catch (Exception e) {
 			System.out.println("construire un site de paris avec un password gestionnaire invalide (un espace) n'a pas levé l'exception MetierException mais " + e.getClass().getName());
 		}
 
@@ -56,7 +56,7 @@ public class TestMetier {
 			System.out.println("construire un site de paris avec un password gestionnaire invalide (un -) n'a pas levé l'exception MetierException ");
 		}
 		catch (MetierException e) { }
-		catch (Exception e) { 
+		catch (Exception e) {
 			System.out.println("construire un site de paris avec un password gestionnaire invalide (un -) n'a pas levé l'exception MetierException mais " + e.getClass().getName());
 		}
 
@@ -72,7 +72,7 @@ public class TestMetier {
 		}
 
 
-	}		
+	}
 
 
 	public static void testValiditePasswordGestionnaire () {
@@ -93,7 +93,7 @@ public class TestMetier {
 				System.out.println("validitePasswordGestionnaire avec un password gestionnaire invalide (non instancié) n'a pas levé l'exception MetierException");
 			}
 			catch (MetierException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("validitePasswordGestionnaire avec un password gestionnaire invalide (non instancié)  n'a pas levé l'exception MetierException mais " + e.getClass().getName());
 			}
 
@@ -102,7 +102,7 @@ public class TestMetier {
 				System.out.println("validitePasswordGestionnaire avec un password gestionnaire invalide (moins de 8 caracteres) n'a pas levé l'exception MetierException ");
 			}
 			catch (MetierException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("validitePasswordGestionnaire avec un password gestionnaire invalide (moins de 8 caracteres)  n'a pas levé l'exception MetierException mais " + e.getClass().getName());
 			}
 
@@ -111,7 +111,7 @@ public class TestMetier {
 				System.out.println("validitePasswordGestionnaire avec un password gestionnaire invalide (un espace) n'a pas levé l'exception MetierException");
 			}
 			catch (MetierException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("validitePasswordGestionnaire avec validitePasswordGestionnaire avec un password gestionnaire invalide (un espace)  n'a pas levé l'exception MetierException mais " + e.getClass().getName());
 			}
 
@@ -120,7 +120,7 @@ public class TestMetier {
 				System.out.println("validitePasswordGestionnaire avec un password gestionnaire invalide (un -) n'a pas levé l'exception MetierException ");
 			}
 			catch (MetierException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("validitePasswordGestionnaire avec validitePasswordGestionnaire avec un password gestionnaire invalide (un -)  n'a pas levé l'exception MetierException mais " + e.getClass().getName());
 			}
 
@@ -132,7 +132,7 @@ public class TestMetier {
 		}
 
 
-	}		
+	}
 
 
 
@@ -147,24 +147,24 @@ public class TestMetier {
 			SiteDeParisMetier siteDeParisMetier = new SiteDeParisMetier(new String("ilesCaimans"));
 
 
-			// inscription correcte de joueurs 
+			// inscription correcte de joueurs
 
-			String passwdBernard = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Bernard"), new String("nanard"), new String("ilesCaimans"));			
-			String passwdFrancoise = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Francoise"), new String("fanfan"), new String("ilesCaimans"));			
+			String passwdBernard = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Bernard"), new String("nanard"), new String("ilesCaimans"));
+			String passwdFrancoise = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Francoise"), new String("fanfan"), new String("ilesCaimans"));
 			String passwdPascal = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Pascal"), new String("pascal"), new String("ilesCaimans"));
 			String passwdMorgane = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Morgane"), new String("momo"), new String("ilesCaimans"));
 			String passwdAureliane = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Aureliane"), new String("aure"), new String("ilesCaimans"));
 			String passwdSylvain = siteDeParisMetier.inscrireJoueur(new String("Nadou"), new String("Sylvain"), new String("zinzin"), new String("ilesCaimans"));
 
 
-			// inscription incorrecte de joueurs 
+			// inscription incorrecte de joueurs
 
 			try {
 				siteDeParisMetier.inscrireJoueur("Maradona", null, "world1Champ", new String("ilesCaimans"));
 				System.out.println("inscrire un joueur avec un prenom invalide (non instancié) n'a pas levé l'exception JoueurException");
 			}
 			catch (JoueurException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("inscrire un joueur avec un prenom invalide (non instancié)  n'a pas levé l'exception JoueurException mais " + e.getClass().getName());
 			}
 
@@ -173,7 +173,7 @@ public class TestMetier {
 				System.out.println("inscrire un joueur avec un nom invalide (non instancié) n'a pas levé l'exception JoueurException");
 			}
 			catch (JoueurException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("inscrire un joueur avec un nom invalide (non instancié)  n'a pas levé l'exception JoueurException mais " + e.getClass().getName());
 			}
 
@@ -182,7 +182,7 @@ public class TestMetier {
 				System.out.println("inscrire un joueur avec un pseudo invalide (non instancié) n'a pas levé l'exception JoueurException");
 			}
 			catch (JoueurException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("inscrire un joueur avec un pseudo invalide (non instancié)  n'a pas levé l'exception JoueurException mais " + e.getClass().getName());
 			}
 
@@ -191,7 +191,7 @@ public class TestMetier {
 				System.out.println("inscrire un joueur avec un password gestionnaire  invalide (non instancié) n'a pas levé l'exception MetierException");
 			}
 			catch (MetierException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("inscrire un joueur avec un password gestionnaire  invalide (non instancié) n'a pas levé l'exception MetierException mais " + e.getClass().getName());
 			}
 
@@ -200,7 +200,7 @@ public class TestMetier {
 				System.out.println("inscrire un joueur avec un prénom invalide (un seul caractère : espace) n'a pas levé l'exception JoueurException");
 			}
 			catch (JoueurException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("inscrire un joueur avec un prénom invalide (un seul caractère : espace)  n'a pas levé l'exception JoueurException mais " + e.getClass().getName());
 			}
 
@@ -209,7 +209,7 @@ public class TestMetier {
 				System.out.println("inscrire un joueur avec un nom invalide (Dur an) n'a pas levé l'exception JoueurException");
 			}
 			catch (JoueurException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("inscrire un joueur avec un nom invalide (Dur an)  n'a pas levé l'exception JoueurException mais " + e.getClass().getName());
 			}
 
@@ -218,7 +218,7 @@ public class TestMetier {
 				System.out.println("inscrire un joueur avec un nom invalide (un caractère ') n'a pas levé l'exception JoueurException");
 			}
 			catch (JoueurException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("inscrire un joueur avec un nom invalide (un caractère ')  n'a pas levé l'exception JoueurException mais " + e.getClass().getName());
 			}
 
@@ -227,7 +227,7 @@ public class TestMetier {
 				System.out.println("inscrire un joueur avec un pseudo invalide (moins de 4 caractères) n'a pas levé l'exception JoueurException");
 			}
 			catch (JoueurException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("inscrire un joueur avec un pseudo invalide (moins de 4 caractères)  n'a pas levé l'exception JoueurException mais " + e.getClass().getName());
 			}
 
@@ -236,7 +236,7 @@ public class TestMetier {
 				System.out.println("inscrire un joueur avec un pseudo invalide (un caractère .) n'a pas levé l'exception JoueurException");
 			}
 			catch (JoueurException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("inscrire un joueur avec un pseudo invalide (un caractère .)  n'a pas levé l'exception JoueurException mais " + e.getClass().getName());
 			}
 
@@ -245,7 +245,7 @@ public class TestMetier {
 				System.out.println("inscrire un joueur avec un password gestionnaire  invalide (moins de 8 caractères) n'a pas levé l'exception MetierException");
 			}
 			catch (MetierException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("inscrire un joueur avec un password gestionnaire  invalide (moins de 8 caractères) n'a pas levé l'exception MetierException mais " + e.getClass().getName());
 			}
 
@@ -254,7 +254,7 @@ public class TestMetier {
 				System.out.println("inscrire un joueur avec un password gestionnaire  incorrect n'a pas levé l'exception MetierException");
 			}
 			catch (MetierException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("inscrire un joueur avec un password gestionnaire  incorrect n'a pas levé l'exception MetierException mais " + e.getClass().getName());
 			}
 
@@ -263,7 +263,7 @@ public class TestMetier {
 				System.out.println("inscrire un joueur existant n'a pas levé l'exception JoueurExistantException");
 			}
 			catch (JoueurExistantException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("inscrire un joueur existant  n'a pas levé l'exception JoueurExistantException mais " + e.getClass().getName());
 			}
 
@@ -273,7 +273,7 @@ public class TestMetier {
 				System.out.println("inscrire un joueur avec même nom et prénom n'a pas levé l'exception JoueurExistantException");
 			}
 			catch (JoueurExistantException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("inscrire un joueur avec même nom et prénom   n'a pas levé l'exception JoueurExistantException mais " + e.getClass().getName());
 			}
 
@@ -282,21 +282,21 @@ public class TestMetier {
 				System.out.println("inscrire un joueur avec un pseudo existant n'a pas levé l'exception JoueurExistantException");
 			}
 			catch (JoueurExistantException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("inscrire un joueur avec un pseudo existant  n'a pas levé l'exception JoueurExistantException mais " + e.getClass().getName());
 			}
 
 
 
 
-			// désinscription incorrecte de joueurs 
+			// désinscription incorrecte de joueurs
 
 			try {
 				siteDeParisMetier.desinscrireJoueur(new String("lolita"), new String("avfrqwxx"), new String("tryui"), new String("ilesCaimans"));
 				System.out.println("désinscrire un joueur inexistant n'a pas levé l'exception JoueurInexistantException");
 			}
 			catch (JoueurInexistantException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("désinscrire un joueur inexistant n'a pas levé l'exception JoueurInexistantException mais " + e.getClass().getName());
 			}
 
@@ -305,22 +305,22 @@ public class TestMetier {
 				System.out.println("désinscrire un joueur avec un  password gestionnaire incorrect n'a pas levé l'exception MetierException");
 			}
 			catch (MetierException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("désinscrire un joueur avec un  password gestionnaire incorrect n'a pas levé l'exception MetierException mais " + e.getClass().getName());
 			}
 
 
-			// désinscription correcte d'un joueur 
+			// désinscription correcte d'un joueur
 			siteDeParisMetier.desinscrireJoueur(new String("Prou"), new String("Pascal"), new String("pascal"), new String("ilesCaimans"));
 
 			// désinscription incorrecte d'un joueur déja désinscrit
-			
+
 			try {
 				siteDeParisMetier.desinscrireJoueur(new String("Prou"), new String("Pascal"), new String("pascal"), new String("ilesCaimans"));
 				System.out.println("désinscrire un joueur déjà retiré n'a pas levé l'exception JoueurInexistantException");
 			}
 			catch (JoueurInexistantException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("désinscrire un joueur déjà retiré n'a pas levé l'exception JoueurInexistantException mais " + e.getClass().getName());
 			}
 
@@ -331,7 +331,7 @@ public class TestMetier {
 		}
 
 
-	}		
+	}
 
 
 
@@ -349,14 +349,14 @@ public class TestMetier {
 			DateFrancaise.setDate(1, 1, 2010);
 
 
-			// ajout incorrect de compétition 
+			// ajout incorrect de compétition
 
 			try {
 				siteDeParisMetier.ajouterCompetition(new String("finaleRG2055"), new DateFrancaise(4, 8, 2055), new String [] {"Clijsters", "Navratilova"}, null);
 				System.out.println("l'ajout d'une compétition avec un password gestionnaire invalide (non instancié)  n'a pas levé l'exception MetierException ");
 			}
 			catch (MetierException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("l'ajout d'une compétition avec un password gestionnaire invalide (non instancié) n'a pas levé l'exception MetierException mais " + e.getClass().getName());
 			}
 
@@ -365,7 +365,7 @@ public class TestMetier {
 				System.out.println("l'ajout d'une compétition avec un password gestionnaire invalide (moins de 8 caractères)  n'a pas levé l'exception MetierException ");
 			}
 			catch (MetierException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("l'ajout d'une compétition avec un password gestionnaire invalide (moins de 8 caractères) n'a pas levé l'exception MetierException mais " + e.getClass().getName());
 			}
 
@@ -374,7 +374,7 @@ public class TestMetier {
 				System.out.println("l'ajout d'une compétition avec un password gestionnaire incorrect  n'a pas levé l'exception MetierException ");
 			}
 			catch (MetierException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("l'ajout d'une compétition avec un password gestionnaire incorrect n'a pas levé l'exception MetierException mais " + e.getClass().getName());
 			}
 
@@ -383,7 +383,7 @@ public class TestMetier {
 				System.out.println("l'ajout d'une compétition avec un nom invalide (non instancié) n'a pas levé l'exception CompetitionException ");
 			}
 			catch (CompetitionException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("l'ajout d'une compétition avec un nom invalide (non instancié)  n'a pas levé l'exception CompetitionException mais " + e.getClass().getName());
 			}
 
@@ -392,7 +392,7 @@ public class TestMetier {
 				System.out.println("l'ajout d'une compétition avec un nom invalide (avec espace) n'a pas levé l'exception CompetitionException ");
 			}
 			catch (CompetitionException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("l'ajout d'une compétition avec un nom invalide (avec espace)  n'a pas levé l'exception CompetitionException mais " + e.getClass().getName());
 			}
 
@@ -401,7 +401,7 @@ public class TestMetier {
 				System.out.println("l'ajout d'une compétition avec un nom invalide (caractere |) n'a pas levé l'exception CompetitionException ");
 			}
 			catch (CompetitionException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("l'ajout d'une compétition avec un nom invalide (caractere |)  n'a pas levé l'exception CompetitionException mais " + e.getClass().getName());
 			}
 
@@ -410,7 +410,7 @@ public class TestMetier {
 				System.out.println("l'ajout d'une compétition avec un nom invalide (moins de 4 caractères) n'a pas levé l'exception CompetitionException ");
 			}
 			catch (CompetitionException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("l'ajout d'une compétition avec un nom invalide (moins de 4 caractères)  n'a pas levé l'exception CompetitionException mais " + e.getClass().getName());
 			}
 
@@ -419,7 +419,7 @@ public class TestMetier {
 				System.out.println("l'ajout d'une compétition avec une date invalide (non instanciée) n'a pas levé l'exception CompetitionException ");
 			}
 			catch (CompetitionException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("l'ajout d'une compétition avec une date invalide (non instanciée) n'a pas levé l'exception CompetitionException mais " + e.getClass().getName());
 			}
 
@@ -428,7 +428,7 @@ public class TestMetier {
 				System.out.println("l'ajout d'une compétition avec un tableau de compétiteurs invalide (non instancié) n'a pas levé l'exception MetierException ");
 			}
 			catch (MetierException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("l'ajout d'une compétition avec un tableau de compétiteurs invalide (non instancié)  n'a pas levé l'exception MetierException mais " + e.getClass().getName());
 			}
 
@@ -438,7 +438,7 @@ public class TestMetier {
 				System.out.println("l'ajout d'une compétition avec un seul compétiteur    n'a pas levé l'exception CompetitionException ");
 			}
 			catch (CompetitionException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("l'ajout d'une compétition avec un seul compétiteur   n'a pas levé l'exception CompetitionException mais " + e.getClass().getName());
 			}
 
@@ -448,7 +448,7 @@ public class TestMetier {
 				System.out.println("l'ajout d'une compétition avec un nom de compétiteur invalide (non instancié) n'a pas levé l'exception CompetitionException ");
 			}
 			catch (CompetitionException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("l'ajout d'une compétition avec un nom de compétiteur invalide (non instancié)  n'a pas levé l'exception CompetitionException mais " + e.getClass().getName());
 			}
 
@@ -457,7 +457,7 @@ public class TestMetier {
 				System.out.println("l'ajout d'une compétition avec un nom de compétiteur invalide (avec espace) n'a pas levé l'exception CompetitionException ");
 			}
 			catch (CompetitionException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("l'ajout d'une compétition avec un nom de compétiteur invalide (avec espace)  n'a pas levé l'exception CompetitionException mais " + e.getClass().getName());
 			}
 
@@ -466,7 +466,7 @@ public class TestMetier {
 				System.out.println("l'ajout d'une compétition avec un nom de compétiteur invalide (moins de 4 caracteres) n'a pas levé l'exception CompetitionException ");
 			}
 			catch (CompetitionException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("l'ajout d'une compétition avec un nom de compétiteur invalide (moins de 4 caracteres)  n'a pas levé l'exception CompetitionException mais " + e.getClass().getName());
 			}
 
@@ -475,7 +475,7 @@ public class TestMetier {
 				System.out.println("l'ajout d'une compétition avec un nom de compétiteur invalide (caractere *) n'a pas levé l'exception CompetitionException ");
 			}
 			catch (CompetitionException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("l'ajout d'une compétition avec un nom de compétiteur invalide (caractere *)  n'a pas levé l'exception CompetitionException mais " + e.getClass().getName());
 			}
 
@@ -484,7 +484,7 @@ public class TestMetier {
 				System.out.println("l'ajout d'une compétition avec deux compétiteurs de même nom  n'a pas levé l'exception CompetitionException");
 			}
 			catch (CompetitionException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("l'ajout d'une compétition avec un nom de compétiteur avec deux compétiteurs de même nom n'a pas levé l'exception CompetitionException mais " + e.getClass().getName());
 			}
 
@@ -493,11 +493,11 @@ public class TestMetier {
 				System.out.println("l'ajout d'une compétition avec date passée n'a pas levé l'exception CompetitionException");
 			}
 			catch (CompetitionException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("l'ajout d'une compétition avec avec date passée n'a pas levé l'exception CompetitionException mais " + e.getClass().getName());
 			}
 
-			// ajout correct de compétition 
+			// ajout correct de compétition
 
 			siteDeParisMetier.ajouterCompetition(new String("ChampionnatDeFrance2012"), new DateFrancaise(4, 6, 2012, 15, 00), new String [] {new String("Lyon"), new String("Marseille"), "Paris", new String("Rennes"), new String("Brest"), "StEtienne", new String("Lille"), "Nancy", "Toulouse", "Auxerre"}, new String("ilesCaimans"));
 			siteDeParisMetier.ajouterCompetition(new String("ChampionnatDeFrance2013"), new DateFrancaise(27, 6, 2013, 20, 00), new String [] {new String("Lyon"), new String("Nantes"), new String("Lens"), new String("Marseille"), "Paris", new String("Rennes"), "StEtienne", new String("Lille"), "Nancy", "Toulouse", }, new String("ilesCaimans"));
@@ -524,7 +524,7 @@ public class TestMetier {
 
 		System.out.println("\n testCrediterDebiterJoueur");
 
-   
+
 
 	}
 
@@ -545,7 +545,7 @@ public class TestMetier {
 
 		System.out.println("\n testSolderVainqueur");
 
-		// tests solder pour des competitions avec parieurs non  gagnants ou sans parieur 
+		// tests solder pour des competitions avec parieurs non  gagnants ou sans parieur
 		try {
 			// construction correcte d'un site
 
@@ -553,10 +553,10 @@ public class TestMetier {
 
 			DateFrancaise.setDate(1, 1, 2010);
 
-			// inscription de joueurs 
+			// inscription de joueurs
 
-			String passwdBernard = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Bernard"), new String("nanard"), new String("ilesCaimans"));					
-			String passwdFrancoise = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Francoise"), new String("fanfan"), new String("ilesCaimans"));					
+			String passwdBernard = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Bernard"), new String("nanard"), new String("ilesCaimans"));
+			String passwdFrancoise = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Francoise"), new String("fanfan"), new String("ilesCaimans"));
 			String passwdPascal = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Pascal"), new String("pascal"), new String("ilesCaimans"));
 			String passwdMorgane = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Morgane"), new String("momo"), new String("ilesCaimans"));
 			String passwdAureliane = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Aureliane"), new String("aure"), new String("ilesCaimans"));
@@ -577,21 +577,21 @@ public class TestMetier {
 			siteDeParisMetier.ajouterCompetition(new String("finaleRG2012"), new DateFrancaise(7, 6, 2012, 15, 00), new String [] {new String("Tsonga"), new String("Nadal")}, new String("ilesCaimans"));
 
 
-			// parier correctement sur un vainqueur 
+			// parier correctement sur un vainqueur
 
 			siteDeParisMetier.miserVainqueur(new String("nanard"), new String(passwdBernard), 40, new String("ChampionnatDeFrance2012"), new String("Lyon"));
 			siteDeParisMetier.miserVainqueur(new String("fanfan"), new String(passwdFrancoise), 20, new String("ChampionnatDeFrance2012"), new String("Brest"));
 			siteDeParisMetier.miserVainqueur(new String("zinzin"), new String(passwdSylvain), 40, new String("ChampionnatDeFrance2012"), new String("Lille"));
 			siteDeParisMetier.miserVainqueur(new String("aure"), new String(passwdAureliane), 37, new String("ChampionnatDeFrance2012"), new String("Marseille"));
 
-			// solder incorrectement un vainqueur 
+			// solder incorrectement un vainqueur
 
 			try {
 				siteDeParisMetier.solderVainqueur(new String("finaleRG2012"),new String("Nadal"), new String("ilesCaimans"));
 				System.out.println("une compétition non terminée a été soldée sans lever CompetitionException");
-			} 
+			}
 			catch (CompetitionException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("une compétition non terminée a été soldée sans lever CompetitionException mais " + e.getClass().getName());
 			}
 
@@ -602,7 +602,7 @@ public class TestMetier {
 				System.out.println("une compétition avec un vainqueur inexistant a été soldée sans lever CompetitionException");
 			}
 			catch (CompetitionException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("uune compétition avec un vainqueur inexistant a été soldée sans lever CompetitionException mais " + e.getClass().getName());
 			}
 
@@ -611,7 +611,7 @@ public class TestMetier {
 				System.out.println("une compétition a été soldée avec un password gestionnaire incorrect sans lever MetierException");
 			}
 			catch (MetierException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("uune compétition a été soldée avec un password gestionnaire incorrect sans lever MetierException mais " + e.getClass().getName());
 			}
 
@@ -620,7 +620,7 @@ public class TestMetier {
 				System.out.println("une compétition a été soldée avec un password gestionnaire invalide sans lever MetierException");
 			}
 			catch (MetierException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("une compétition a été soldée avec un password gestionnaire invalide sans lever MetierException mais " + e.getClass().getName());
 			}
 
@@ -629,7 +629,7 @@ public class TestMetier {
 				System.out.println("une compétition inexistante est  soldée sans lever CompetitionInexistanteException");
 			}
 			catch (CompetitionInexistanteException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("uune compétition inexistante est  soldée sans lever CompetitionInexistanteException mais " + e.getClass().getName());
 			}
 
@@ -647,11 +647,11 @@ public class TestMetier {
 				System.out.println("une compétition déja soldée est  soldée sans lever CompetitionInexistanteException");
 			}
 			catch (CompetitionInexistanteException e) { }
-			catch (Exception e) { 
+			catch (Exception e) {
 				System.out.println("une compétition déja soldée  soldée sans lever CompetitionInexistanteException mais " + e.getClass().getName());
 			}
 
-			// on vérifie deux crédits restants 
+			// on vérifie deux crédits restants
 
 			//  nanard doit avoir une crédit de 1789
 
@@ -659,8 +659,8 @@ public class TestMetier {
 				siteDeParisMetier.debiterJoueur(new String("Prou"), new String("Bernard"), new String("nanard"), 1790, new String("ilesCaimans"));
 				System.out.println("le credit de bernard devrait être inférieur à 1790, et l'exception JoueurException aurait dû être levée");
 			}
-			catch (JoueurException e) { } 
-			catch (Exception e) { 
+			catch (JoueurException e) { }
+			catch (Exception e) {
 				System.out.println("le credit de bernard devrait être inférieur à 1790, et l'exception JoueurException aurait dû être levée mais c'est : " + e.getClass().getName());
 			}
 
@@ -668,10 +668,10 @@ public class TestMetier {
 			try {
 				siteDeParisMetier.debiterJoueur(new String("Prou"), new String("Bernard"), new String("nanard"), 1789, new String("ilesCaimans"));
 			}
-			catch (JoueurException e) { 
+			catch (JoueurException e) {
 				System.out.println("le credit de bernard devrait être égal à 1789, et l'exception JoueurException n'aurait pas dû être levée");
-			} 
-			catch (Exception e) { 
+			}
+			catch (Exception e) {
 				System.out.println("le credit de bernard devrait être égal à 1789, et aucune exception n'aurait dû être levée mais c'est : " + e.getClass().getName());
 			}
 
@@ -681,18 +681,18 @@ public class TestMetier {
 				siteDeParisMetier.debiterJoueur(new String("Prou"), new String("Aureliane"), new String("aure"), 786, new String("ilesCaimans"));
 				System.out.println("le credit d'aure devrait être inférieur à 786, et l'exception JoueurException aurait dû être levée");
 			}
-			catch (JoueurException e) { } 
-			catch (Exception e) { 
+			catch (JoueurException e) { }
+			catch (Exception e) {
 				System.out.println("le credit d'aure devrait être inférieur à 786, et l'exception JoueurException aurait dû être levée mais c'est : " + e.getClass().getName());
 			}
 
 			try {
 				siteDeParisMetier.debiterJoueur(new String("Prou"), new String("Aureliane"), new String("aure"), 785, new String("ilesCaimans"));
 			}
-			catch (JoueurException e) { 
+			catch (JoueurException e) {
 				System.out.println("le credit d'aure devrait être égal à 785, et l'exception JoueurException n'aurait pas dû être levée");
-			} 
-			catch (Exception e) { 
+			}
+			catch (Exception e) {
 				System.out.println("le credit d'aure devrait être égal à 785, et aucune exception n'aurait dû être levée mais c'est : " + e.getClass().getName());
 			}
 
@@ -702,9 +702,9 @@ public class TestMetier {
 			System.out.println("\n Exception imprévue : " + e);
 			e.printStackTrace();
 		}
-		
-		/**
-		
+
+
+
 		// tests solder pour des competitions avec parieurs, avec un gagnant, avec plusieurs gagnants
 		try {
 			// construction correcte d'un site
@@ -713,10 +713,10 @@ public class TestMetier {
 
 			DateFrancaise.setDate(1, 1, 2010);
 
-			// inscription de joueurs 
+			// inscription de joueurs
 
-			String passwdBernard = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Bernard"), new String("nanard"), new String("ilesCaimans"));					
-			String passwdFrancoise = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Francoise"), new String("fanfan"), new String("ilesCaimans"));					
+			String passwdBernard = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Bernard"), new String("nanard"), new String("ilesCaimans"));
+			String passwdFrancoise = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Francoise"), new String("fanfan"), new String("ilesCaimans"));
 			String passwdPascal = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Pascal"), new String("pascal"), new String("ilesCaimans"));
 			String passwdMorgane = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Morgane"), new String("momo"), new String("ilesCaimans"));
 			String passwdAureliane = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Aureliane"), new String("aure"), new String("ilesCaimans"));
@@ -738,7 +738,7 @@ public class TestMetier {
 			siteDeParisMetier.ajouterCompetition(new String("finaleRG2012"), new DateFrancaise(7, 6, 2012, 15, 00), new String [] {new String("Tsonga"), new String("Nadal")}, new String("ilesCaimans"));
 
 
-			// parier correctement sur un vainqueur 
+			// parier correctement sur un vainqueur
 
 			siteDeParisMetier.miserVainqueur(new String("nanard"), passwdBernard, 50, new String("finaleRG2012"), new String("Tsonga"));
 			siteDeParisMetier.miserVainqueur(new String("fanfan"), passwdFrancoise, 70, new String("finaleRG2012"), new String("Nadal"));
@@ -766,7 +766,7 @@ public class TestMetier {
 			DateFrancaise.setDate(27, 6, 2013, 23, 00);
 			siteDeParisMetier.solderVainqueur(new String("ChampionnatDeFrance2013"),new String("Nantes"), new String("ilesCaimans"));
 
-			// on vérifie trois crédits restants 
+			// on vérifie trois crédits restants
 
 			//  nanard doit avoir une crédit de 1868
 
@@ -774,8 +774,8 @@ public class TestMetier {
 				siteDeParisMetier.debiterJoueur(new String("Prou"), new String("Bernard"), new String("nanard"), 1869, new String("ilesCaimans"));
 				System.out.println("le credit de bernard devrait être inférieur à 1869, et l'exception JoueurException aurait dû être levée");
 			}
-			catch (JoueurException e) { } 
-			catch (Exception e) { 
+			catch (JoueurException e) { }
+			catch (Exception e) {
 				System.out.println("le credit de bernard devrait être inférieur à 1869, et l'exception JoueurException aurait dû être levée mais c'est : " + e.getClass().getName());
 			}
 
@@ -783,10 +783,10 @@ public class TestMetier {
 			try {
 				siteDeParisMetier.debiterJoueur(new String("Prou"), new String("Bernard"), new String("nanard"), 1868, new String("ilesCaimans"));
 			}
-			catch (JoueurException e) { 
+			catch (JoueurException e) {
 				System.out.println("le credit de bernard devrait être égal à 1868, et l'exception JoueurException n'aurait pas dû être levée");
-			} 
-			catch (Exception e) { 
+			}
+			catch (Exception e) {
 				System.out.println("le credit de bernard devrait être égal à 1868, et aucune exception n'aurait dû être levée mais c'est : " + e.getClass().getName());
 			}
 
@@ -796,18 +796,18 @@ public class TestMetier {
 				siteDeParisMetier.debiterJoueur(new String("Prou"), new String("Aureliane"), new String("aure"), 905, new String("ilesCaimans"));
 				System.out.println("le credit d'aure devrait être inférieur à 905, et l'exception JoueurException aurait dû être levée");
 			}
-			catch (JoueurException e) { } 
-			catch (Exception e) { 
+			catch (JoueurException e) { }
+			catch (Exception e) {
 				System.out.println("le credit d'aure devrait être inférieur à 905, et l'exception JoueurException aurait dû être levée mais c'est : " + e.getClass().getName());
 			}
 
 			try {
 				siteDeParisMetier.debiterJoueur(new String("Prou"), new String("Aureliane"), new String("aure"), 904, new String("ilesCaimans"));
 			}
-			catch (JoueurException e) { 
+			catch (JoueurException e) {
 				System.out.println("le credit d'aure devrait être égal à 904, et l'exception JoueurException n'aurait pas dû être levée");
-			} 
-			catch (Exception e) { 
+			}
+			catch (Exception e) {
 				System.out.println("le credit d'aure devrait être égal à 904, et aucune exception n'aurait dû être levée mais c'est : " + e.getClass().getName());
 			}
 
@@ -817,18 +817,18 @@ public class TestMetier {
 				siteDeParisMetier.debiterJoueur(new String("Nadou"), new String("Sylvain"), new String("zinzin"), 1044, new String("ilesCaimans"));
 				System.out.println("le credit de zinzin devrait être inférieur à 1044, et l'exception JoueurException aurait dû être levée");
 			}
-			catch (JoueurException e) { } 
-			catch (Exception e) { 
+			catch (JoueurException e) { }
+			catch (Exception e) {
 				System.out.println("le credit de zinzin devrait être inférieur à 1044, et l'exception JoueurException aurait dû être levée mais c'est : " + e.getClass().getName());
 			}
 
 			try {
 				siteDeParisMetier.debiterJoueur(new String("Nadou"), new String("Sylvain"), new String("zinzin"), 1043, new String("ilesCaimans"));
 			}
-			catch (JoueurException e) { 
+			catch (JoueurException e) {
 				System.out.println("le credit de zinzin devrait être égal à 1043, et l'exception JoueurException n'aurait pas dû être levée");
-			} 
-			catch (Exception e) { 
+			}
+			catch (Exception e) {
 				System.out.println("le credit de zinzin devrait être égal à 1043, et aucune exception n'aurait dû être levée mais c'est : " + e.getClass().getName());
 			}
 
@@ -838,8 +838,7 @@ public class TestMetier {
 			System.out.println("\n Exception imprévue : " + e);
 			e.printStackTrace();
 		}
-      */
-		
+
 	}
 
 
@@ -874,11 +873,11 @@ public class TestMetier {
 			LinkedList <LinkedList <String>> competitions = siteDeParisMetier.consulterCompetitions();
 			for (LinkedList <String> l : competitions) {
 				if (l.get(0).equals(new String("ChampionnatDeFrance2012")) && (!l.get(1).equals(new DateFrancaise(4, 6, 2012, 15, 00).toString())))
-					System.out.println("probleme sur affichage ChampionnatDeFrance2012 ");				
+					System.out.println("probleme sur affichage ChampionnatDeFrance2012 ");
 				if (l.get(0).equals(new String("ChampionnatDeFrance2013")) && (!l.get(1).equals(new DateFrancaise(27, 6, 2013, 20, 00).toString())))
-					System.out.println("probleme sur affichage ChampionnatDeFrance2013 ");				
+					System.out.println("probleme sur affichage ChampionnatDeFrance2013 ");
 				if (l.get(0).equals(new String("finaleRG2012")) && (!l.get(1).equals(new DateFrancaise(7, 6, 2012, 15, 00).toString())))
-					System.out.println("probleme sur affichage finaleRG2012 ");				
+					System.out.println("probleme sur affichage finaleRG2012 ");
 			}
 
 
@@ -894,11 +893,11 @@ public class TestMetier {
 			competitions = siteDeParisMetier.consulterCompetitions();
 			for (LinkedList <String> l : competitions) {
 				if (l.get(0).equals(new String("ChampionnatDeFrance2012")) && (!l.get(1).equals(new DateFrancaise(4, 6, 2012, 15, 00).toString())))
-					System.out.println("probleme sur affichage ChampionnatDeFrance2012 ");				
+					System.out.println("probleme sur affichage ChampionnatDeFrance2012 ");
 				if (l.get(0).equals(new String("ChampionnatDeFrance2013")) && (!l.get(1).equals(new DateFrancaise(27, 6, 2013, 20, 00).toString())))
-					System.out.println("probleme sur affichage ChampionnatDeFrance2013 ");				
+					System.out.println("probleme sur affichage ChampionnatDeFrance2013 ");
 				if (l.get(0).equals(new String("finaleRG2012")))
-					System.out.println("la finaleRG2012 a été soldée et ne devrait pas être dans la liste");				
+					System.out.println("la finaleRG2012 a été soldée et ne devrait pas être dans la liste");
 			}
 
 		}
@@ -923,8 +922,8 @@ public class TestMetier {
 				siteDeParisMetier.consulterCompetiteurs(null);
 				System.out.println("consulterCompetiteurs avec une competition invalide (non instancié) n'a pas levé l'exception CompetitionException ");
 			}
-			catch (CompetitionException e) { }	
-			catch (Exception e) { 
+			catch (CompetitionException e) { }
+			catch (Exception e) {
 				System.out.println("consulterCompetiteurs avec une competition invalide (non instancié) n'a pas levé l'exception CompetitionException mais " + e.getClass().getName());
 			}
 
@@ -932,8 +931,8 @@ public class TestMetier {
 				siteDeParisMetier.consulterCompetiteurs("i2");
 				System.out.println("consulterCompetiteurs avec une competition invalide (moins de 4 caractères) n'a pas levé l'exception CompetitionException ");
 			}
-			catch (CompetitionException e) { }			
-			catch (Exception e) { 
+			catch (CompetitionException e) { }
+			catch (Exception e) {
 				System.out.println("consulterCompetiteurs avec une competition invalide (moins de 4 caractères) n'a pas levé l'exception CompetitionException mais " + e.getClass().getName());
 			}
 
@@ -941,8 +940,8 @@ public class TestMetier {
 				siteDeParisMetier.consulterCompetiteurs("inconnu");
 				System.out.println("consulterCompetiteurs avec une competition inexistante n'a pas levé l'exception CompetitionInexistanteException ");
 			}
-			catch (CompetitionInexistanteException e) { }			
-			catch (Exception e) { 
+			catch (CompetitionInexistanteException e) { }
+			catch (Exception e) {
 				System.out.println("consulterCompetiteurs avec une competition inexistante n'a pas levé l'exception CompetitionInexistanteException mais " + e.getClass().getName());
 			}
 
@@ -1000,8 +999,8 @@ public class TestMetier {
 				siteDeParisMetier.consulterJoueurs(null);
 				System.out.println("consulterJoueurs avec un password invalide (non instancié) n'a pas levé l'exception MetierException ");
 			}
-			catch (MetierException e) { }	
-			catch (Exception e) { 
+			catch (MetierException e) { }
+			catch (Exception e) {
 				System.out.println("consulterJoueurs avec un password invalide (non instancié) n'a pas levé l'exception MetierException mais " + e.getClass().getName());
 			}
 
@@ -1009,8 +1008,8 @@ public class TestMetier {
 				siteDeParisMetier.consulterJoueurs("i2");
 				System.out.println("consulterJoueurs avec un password invalide (moins de 4 caractères) n'a pas levé l'exception MetierException ");
 			}
-			catch (MetierException e) { }			
-			catch (Exception e) { 
+			catch (MetierException e) { }
+			catch (Exception e) {
 				System.out.println("consulterJoueurs avec un password invalide (moins de 4 caractères) n'a pas levé l'exception MetierException mais " + e.getClass().getName());
 			}
 
@@ -1018,8 +1017,8 @@ public class TestMetier {
 				siteDeParisMetier.consulterJoueurs("inconnu");
 				System.out.println("consulterJoueurs avec un password incorrect n'a pas levé l'exception MetierException ");
 			}
-			catch (MetierException e) { }			
-			catch (Exception e) { 
+			catch (MetierException e) { }
+			catch (Exception e) {
 				System.out.println("consulterJoueurs avec un password incorrect n'a pas levé l'exception MetierException mais " + e.getClass().getName());
 			}
 
@@ -1031,10 +1030,10 @@ public class TestMetier {
 
 			DateFrancaise.setDate(1, 1, 2010);
 
-			// inscription de joueurs 
+			// inscription de joueurs
 
-			String passwdBernard = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Bernard"), new String("nanard"), new String("ilesCaimans"));					
-			String passwdFrancoise = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Francoise"), new String("fanfan"), new String("ilesCaimans"));					
+			String passwdBernard = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Bernard"), new String("nanard"), new String("ilesCaimans"));
+			String passwdFrancoise = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Francoise"), new String("fanfan"), new String("ilesCaimans"));
 			String passwdPascal = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Pascal"), new String("pascal"), new String("ilesCaimans"));
 			String passwdMorgane = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Morgane"), new String("momo"), new String("ilesCaimans"));
 			String passwdAureliane = siteDeParisMetier.inscrireJoueur(new String("Prou"), new String("Aureliane"), new String("aure"), new String("ilesCaimans"));
@@ -1056,13 +1055,13 @@ public class TestMetier {
 			LinkedList <LinkedList <String>> joueurs = siteDeParisMetier.consulterJoueurs(new String("ilesCaimans"));
 			for (LinkedList <String> l : joueurs) {
 				if (l.get(2).equals(new String("momo")) && (!l.get(0).equals(new String("Prou")) || !l.get(1).equals(new String("Morgane")) || !l.get(3).equals("" + 1848) || !l.get(4).equals("" + 0)))
-					System.out.println("probleme sur affichage du joueur momo après crédit");				
+					System.out.println("probleme sur affichage du joueur momo après crédit");
 				if (l.get(2).equals(new String("nanard")) && (!l.get(0).equals(new String("Prou")) || !l.get(1).equals(new String("Bernard")) || !l.get(3).equals("" + 1789)|| !l.get(4).equals("" + 0)))
-					System.out.println("probleme sur affichage du joueur nanard après crédit");				
+					System.out.println("probleme sur affichage du joueur nanard après crédit");
 				if (l.get(2).equals(new String("zinzin")) && (!l.get(0).equals(new String("Nadou")) || !l.get(1).equals(new String("Sylvain")) || !l.get(3).equals("" + 1123)|| !l.get(4).equals("" + 0)))
-					System.out.println("probleme sur affichage du joueur zinzin après crédit");				
+					System.out.println("probleme sur affichage du joueur zinzin après crédit");
 				if (l.get(2).equals(new String("aure")) && (!l.get(0).equals(new String("Prou")) || !l.get(1).equals(new String("Aureliane")) || !l.get(3).equals("" + 785) || !l.get(4).equals("" + 0)))
-					System.out.println("probleme sur affichage du joueur aure après crédit");				
+					System.out.println("probleme sur affichage du joueur aure après crédit");
 			}
 
 			// ajout de compétions
@@ -1085,13 +1084,13 @@ public class TestMetier {
 			joueurs = siteDeParisMetier.consulterJoueurs(new String("ilesCaimans"));
 			for (LinkedList <String> l : joueurs) {
 				if (l.get(2).equals(new String("momo")) && (!l.get(0).equals(new String("Prou")) || !l.get(1).equals(new String("Morgane")) || !l.get(3).equals("" + 1848) || !l.get(4).equals("" + 0)))
-					System.out.println("probleme sur affichage du joueur momo après paris");				
+					System.out.println("probleme sur affichage du joueur momo après paris");
 				if (l.get(2).equals(new String("nanard")) && (!l.get(0).equals(new String("Prou")) || !l.get(1).equals(new String("Bernard")) || !l.get(3).equals("" + 1669) || !l.get(4).equals("" + 120)))
-					System.out.println("probleme sur affichage du joueur nanard après paris");				
+					System.out.println("probleme sur affichage du joueur nanard après paris");
 				if (l.get(2).equals(new String("zinzin")) && (!l.get(0).equals(new String("Nadou")) || !l.get(1).equals(new String("Sylvain")) || !l.get(3).equals("" + 1083) || !l.get(4).equals("" + 40)))
-					System.out.println("probleme sur affichage du joueur zinzin après paris");				
+					System.out.println("probleme sur affichage du joueur zinzin après paris");
 				if (l.get(2).equals(new String("aure")) && (!l.get(0).equals(new String("Prou")) || !l.get(1).equals(new String("Aureliane")) || !l.get(3).equals("" + 700) || !l.get(4).equals("" + 85)))
-					System.out.println("probleme sur affichage du joueur aure après paris");				
+					System.out.println("probleme sur affichage du joueur aure après paris");
 			}
 
 
@@ -1101,13 +1100,13 @@ public class TestMetier {
 			joueurs = siteDeParisMetier.consulterJoueurs(new String("ilesCaimans"));
 			for (LinkedList <String> l : joueurs) {
 				if (l.get(2).equals(new String("momo")) && (!l.get(0).equals(new String("Prou")) || !l.get(1).equals(new String("Morgane")) || !l.get(3).equals("" + 1848) || !l.get(4).equals("" + 0)))
-					System.out.println("probleme sur affichage du joueur momo après premier solder");				
+					System.out.println("probleme sur affichage du joueur momo après premier solder");
 				if (l.get(2).equals(new String("nanard")) && (!l.get(0).equals(new String("Prou")) || !l.get(1).equals(new String("Bernard")) || !l.get(3).equals("" + 1669) || !l.get(4).equals("" + 80)))
-					System.out.println("probleme sur affichage du joueur nanard après premier solder");				
+					System.out.println("probleme sur affichage du joueur nanard après premier solder");
 				if (l.get(2).equals(new String("zinzin")) && (!l.get(0).equals(new String("Nadou")) || !l.get(1).equals(new String("Sylvain")) || !l.get(3).equals("" + 1083) || !l.get(4).equals("" + 0)))
-					System.out.println("probleme sur affichage du joueur zinzin après premier solder");				
+					System.out.println("probleme sur affichage du joueur zinzin après premier solder");
 				if (l.get(2).equals(new String("aure")) && (!l.get(0).equals(new String("Prou")) || !l.get(1).equals(new String("Aureliane")) || !l.get(3).equals("" + 837) || !l.get(4).equals("" + 48)))
-					System.out.println("probleme sur affichage du joueur aure après premier solder");				
+					System.out.println("probleme sur affichage du joueur aure après premier solder");
 			}
 
 			DateFrancaise.setDate(27, 6, 2013, 23, 00);
@@ -1116,13 +1115,13 @@ public class TestMetier {
 			joueurs = siteDeParisMetier.consulterJoueurs(new String("ilesCaimans"));
 			for (LinkedList <String> l : joueurs) {
 				if (l.get(2).equals(new String("momo")) && (!l.get(0).equals(new String("Prou")) || !l.get(1).equals(new String("Morgane")) || !l.get(3).equals("" + 1848) || !l.get(4).equals("" + 0)))
-					System.out.println("probleme sur affichage du joueur momo après deuxieme solder");				
+					System.out.println("probleme sur affichage du joueur momo après deuxieme solder");
 				if (l.get(2).equals(new String("nanard")) && (!l.get(0).equals(new String("Prou")) || !l.get(1).equals(new String("Bernard")) || !l.get(3).equals("" + 1767) || !l.get(4).equals("" + 0)))
-					System.out.println("probleme sur affichage du joueur nanard après deuxieme solder");				
+					System.out.println("probleme sur affichage du joueur nanard après deuxieme solder");
 				if (l.get(2).equals(new String("zinzin")) && (!l.get(0).equals(new String("Nadou")) || !l.get(1).equals(new String("Sylvain")) || !l.get(3).equals("" + 1083) || !l.get(4).equals("" + 0)))
-					System.out.println("probleme sur affichage du joueur zinzin après deuxieme solder");				
+					System.out.println("probleme sur affichage du joueur zinzin après deuxieme solder");
 				if (l.get(2).equals(new String("aure")) && (!l.get(0).equals(new String("Prou")) || !l.get(1).equals(new String("Aureliane")) || !l.get(3).equals("" + 896) || !l.get(4).equals("" + 0)))
-					System.out.println("probleme sur affichage du joueur aure après deuxieme solder");				
+					System.out.println("probleme sur affichage du joueur aure après deuxieme solder");
 			}
 
 		}
@@ -1138,14 +1137,14 @@ public class TestMetier {
 
 		testConstructeurSiteDeParisMetier();
 		testValiditePasswordGestionnaire();
-      testInscrireDesinscrireJoueur();
+		testInscrireDesinscrireJoueur();
 		testCrediterDebiterJoueur();
-      testAjouterCompetition();
+		testAjouterCompetition();
 		testMiserVainqueur();
- 		testSolderVainqueur();
-//    testConsulterCompetitions();
+		testSolderVainqueur();
+//               testConsulterCompetitions();
 //		testConsulterCompetiteurs();
-//		testConsulterJoueurs();		
+//		testConsulterJoueurs();
 
 	}
 
