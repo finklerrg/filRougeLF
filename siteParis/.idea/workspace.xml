@@ -10,13 +10,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/siteParis$TestMetier.coverage" NAME="TestMetier Coverage Results" MODIFIED="1508887692961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="TestMetier.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/siteParis/TestMetier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-260">
-              <caret line="921" column="60" lean-forward="false" selection-start-line="921" selection-start-column="56" selection-end-line="921" selection-end-column="60" />
+            <state relative-caret-position="265">
+              <caret line="1051" column="41" lean-forward="false" selection-start-line="1051" selection-start-column="41" selection-end-line="1051" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,7 +43,7 @@
       <file leaf-file-name="Joueur.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/siteParis/Joueur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="-252">
               <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
               <folding />
             </state>
@@ -50,8 +53,8 @@
       <file leaf-file-name="SiteDeParisMetier.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/siteParis/SiteDeParisMetier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="797" column="0" lean-forward="true" selection-start-line="797" selection-start-column="0" selection-end-line="797" selection-end-column="0" />
+            <state relative-caret-position="1085">
+              <caret line="593" column="5" lean-forward="false" selection-start-line="593" selection-start-column="5" selection-end-line="593" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,6 +138,8 @@
     <findStrings>
       <find>consulterCompetiteurs</find>
       <find>testConsulterCompetiteurs</find>
+      <find>testConsulterJoueurs</find>
+      <find>cons</find>
       <find>consulter</find>
     </findStrings>
   </component>
@@ -338,7 +343,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -346,6 +351,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2140625" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299293" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -766,14 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/siteParis/Joueur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/siteParis/Pari.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-758">
@@ -789,29 +787,6 @@
           <folding>
             <element signature="e#497#498#0" expanded="true" />
             <element signature="e#531#532#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/siteParis/Competiteur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/siteParis/TestMetier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-260">
-          <caret line="921" column="60" lean-forward="false" selection-start-line="921" selection-start-column="56" selection-end-line="921" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -852,10 +827,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/siteParis/Joueur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/siteParis/Competiteur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/siteParis/TestMetier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="1051" column="41" lean-forward="false" selection-start-line="1051" selection-start-column="41" selection-end-line="1051" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/siteParis/SiteDeParisMetier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="797" column="0" lean-forward="true" selection-start-line="797" selection-start-column="0" selection-end-line="797" selection-end-column="0" />
+        <state relative-caret-position="1085">
+          <caret line="593" column="5" lean-forward="false" selection-start-line="593" selection-start-column="5" selection-end-line="593" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

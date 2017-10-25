@@ -534,7 +534,63 @@ public class SiteDeParisMetier {
 	 *  </ul>
 	 */
 	public LinkedList <LinkedList <String>> consulterJoueurs(String passwordGestionnaire) throws MetierException {
-		return new LinkedList <LinkedList <String>>();
+
+		//validação do password gestionnaire
+		validitePasswordGestionnaire(passwordGestionnaire);
+		if(!leGestionnaire.getPasswordGestionnaire().equals(passwordGestionnaire)) throw new MetierException();
+
+		LinkedList<LinkedList<String>> linkJoueur; //declaração
+		linkJoueur=new LinkedList<LinkedList<String>>(); //inicialização
+
+		LinkedList<String>[] atributos;
+		int tamanhoLinked=joueurs.size();
+		atributos=new LinkedList[tamanhoLinked];
+
+		int soma=0;
+		// System.out.println("o tamanho é "+tamanhoLinked);
+		for(int i1=0;i1<tamanhoLinked;i1++){
+
+			atributos[i1]=new LinkedList<String>();
+
+			atributos[i1].add(joueurs.get(i1).getNom());
+			atributos[i1].add(joueurs.get(i1).getPrenom());
+			atributos[i1].add(joueurs.get(i1).getPseudo());
+			atributos[i1].add(String.valueOf(joueurs.get(i1).getSommeEnJetons()));
+
+
+			//percorre todas as competições;
+			int tamanho2=competitions.size();
+			for(int i2=0 ; i2<tamanho2 ;i2++){
+				//agora a gnt acessa para cada competição todas as suas paris e ve se o joueur apostou em uma pari,
+				//se apostou soma na variavel soma
+
+
+				//todas as paris de uma competição
+				int tamanho3=competitions.get(i2).getParis().size();
+
+
+				for(int i3=0;i3<tamanho3;i3++){
+
+					if(competitions.get(i2).getParis().get(i3).getJoueurReference().getPseudo().equals(joueurs.get(i1).getPseudo())){
+
+						soma=soma+(int)competitions.get(i2).getParis().get(i3).getMiseEnJetons();
+
+					}
+
+				}
+
+			}
+
+			atributos[i1].add(String.valueOf(soma));
+			linkJoueur.add(atributos[i1]);
+			soma=0;
+
+		}
+
+
+		//System.out.println("O tamanho no final é "+linkJoueur.size());
+
+		return linkJoueur;
 	}
 
 

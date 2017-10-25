@@ -989,6 +989,7 @@ public class TestMetier {
 
 		System.out.println("\n testConsulterJoueurs");
 
+
 		try {
 			// construction correcte d'un site
 
@@ -1135,6 +1136,14 @@ public class TestMetier {
 
 	public static void main (String [] args) {
 
+		/**
+		String x1 = new String("\nPAU NO TEU CU") ;
+		System.out.println("\nMerci Beaucoup"+x1);
+
+		long x2= 3;
+		String x4= String.valueOf(x2);
+		System.out.println(x4);
+		*/
 		testConstructeurSiteDeParisMetier();
 		testValiditePasswordGestionnaire();
 		testInscrireDesinscrireJoueur();
@@ -1146,7 +1155,7 @@ public class TestMetier {
 
 
 		testConsulterCompetiteurs();
-//		testConsulterJoueurs();
+		testConsulterJoueurs();
 
 
 
